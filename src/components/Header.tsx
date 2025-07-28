@@ -19,11 +19,17 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="text-2xl font-bold text-primary">AI Story</div>
+            <div className="text-2xl font-bold text-primary">ainboxmanager</div>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
+            <button
+              onClick={() => scrollToSection('about')}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              O nás
+            </button>
             <button
               onClick={() => scrollToSection('features')}
               className="text-foreground hover:text-primary transition-colors"
@@ -46,9 +52,11 @@ const Header = () => {
 
           {/* Desktop Login Button */}
           <div className="hidden md:flex">
-            <Button variant="cta" size="lg">
-              Prihlásenie
-            </Button>
+            <a href="/login">
+              <Button variant="cta" size="lg">
+                Prihlásenie
+              </Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -68,6 +76,12 @@ const Header = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-background border-t border-border">
               <button
+                onClick={() => scrollToSection('about')}
+                className="block w-full text-left px-3 py-2 text-foreground hover:text-primary transition-colors"
+              >
+                O nás
+              </button>
+              <button
                 onClick={() => scrollToSection('features')}
                 className="block w-full text-left px-3 py-2 text-foreground hover:text-primary transition-colors"
               >
@@ -86,9 +100,11 @@ const Header = () => {
                 Kontakt
               </button>
               <div className="px-3 py-2">
-                <Button variant="cta" size="lg" className="w-full">
-                  Prihlásenie
-                </Button>
+                <a href="/login" className="block w-full">
+                  <Button variant="cta" size="lg" className="w-full">
+                    Prihlásenie
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

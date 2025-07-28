@@ -20,7 +20,7 @@ const HeroSection = () => {
           
           {/* Main heading */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 animate-fade-up">
-            <span className="block">AI Story</span>
+            <span className="block">ainboxmanager</span>
             <span className="block text-primary mt-2">
               Tvoj AI asistent na organizáciu
             </span>
@@ -33,13 +33,17 @@ const HeroSection = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-up" style={{ animationDelay: '0.4s' }}>
-            <Button variant="hero" size="xl" className="group">
-              Začni teraz
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="outline" size="xl">
-              Vyskúšaj zdarma
-            </Button>
+            <a href="/register">
+              <Button variant="hero" size="xl" className="group">
+                Začni teraz
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </a>
+            <a href="/trial">
+              <Button variant="outline" size="xl">
+                Vyskúšaj zdarma
+              </Button>
+            </a>
           </div>
           
           {/* Hero Image */}
