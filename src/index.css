@@ -2,41 +2,84 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* AI Story Design System - Modern Blue & White Palette */
 
 @layer base {
   :root {
+    /* Pure whites and soft backgrounds */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 218 25% 15%;
+    --surface: 210 40% 98%;
 
+    /* Card and elevated surfaces */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 218 25% 15%;
 
+    /* Popover and floating elements */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 218 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary brand colors - sophisticated blue */
+    --primary: 214 84% 56%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 214 84% 48%;
+    --primary-light: 214 84% 85%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary and muted colors */
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 218 25% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 40% 95%;
+    --muted-foreground: 218 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent colors */
+    --accent: 210 40% 95%;
+    --accent-foreground: 218 25% 15%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Status colors */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Border and input */
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 214 84% 56%;
 
-    --radius: 0.5rem;
+    /* Design tokens */
+    --radius: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(214 84% 48%));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--surface)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(214 84% 48%) 50%, hsl(214 84% 40%) 100%);
+
+    /* Shadows */
+    --shadow-subtle: 0 1px 3px 0 hsl(214 84% 56% / 0.05), 0 1px 2px 0 hsl(214 84% 56% / 0.06);
+    --shadow-medium: 0 4px 6px -1px hsl(214 84% 56% / 0.07), 0 2px 4px -1px hsl(214 84% 56% / 0.06);
+    --shadow-large: 0 10px 15px -3px hsl(214 84% 56% / 0.08), 0 4px 6px -2px hsl(214 84% 56% / 0.05);
+    --shadow-glow: 0 0 40px hsl(214 84% 70% / 0.15);
+
+    /* Typography */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
+    --font-size-5xl: 3rem;
+
+    /* Animations */
+    --animation-fast: 150ms ease-out;
+    --animation-normal: 250ms ease-out;
+    --animation-slow: 350ms ease-out;
 
     --sidebar-background: 0 0% 98%;
 
