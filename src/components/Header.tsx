@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import brainIcon from "@/assets/brain-icon.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +20,10 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="text-2xl font-bold text-primary">ainboxmanager</div>
+            <div className="flex items-center gap-2 text-2xl font-bold text-primary">
+              <img src={brainIcon} alt="AI Brain" className="w-8 h-8" />
+              ainboxmanager
+            </div>
           </div>
 
           {/* Desktop Navigation */}
