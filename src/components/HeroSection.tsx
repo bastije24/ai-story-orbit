@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import heroDashboard from "@/assets/hero-dashboard.jpg";
+import brainIcon from "@/assets/brain-icon.png";
 
 const HeroSection = () => {
   return (
@@ -20,7 +21,10 @@ const HeroSection = () => {
           
           {/* Main heading */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 animate-fade-up">
-            <span className="block">ainboxmanager</span>
+            <span className="flex items-center justify-center gap-4">
+              <img src={brainIcon} alt="AI Brain" className="w-12 h-12 sm:w-16 sm:h-16" />
+              ainboxmanager
+            </span>
             <span className="block text-primary mt-2">
               Tvoj AI asistent na organizáciu
             </span>
