@@ -1,6 +1,5 @@
 import { Users, Target, Lightbulb, Award } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import aiDashboard from "@/assets/ai-dashboard-tablet.jpg";
 
 const values = [
   {
@@ -47,67 +46,52 @@ const AboutSection = () => {
           </p>
         </div>
 
-        {/* Story with Visual */}
-        <div className="max-w-6xl mx-auto mb-16 animate-fade-up">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Image */}
-            <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-primary rounded-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
-              <img 
-                src={aiDashboard} 
-                alt="ainboxmanager AI Dashboard" 
-                className="relative w-full rounded-xl shadow-large hover:shadow-xl transition-all duration-300 transform group-hover:scale-[1.02]"
-              />
-            </div>
+        {/* Story */}
+        <div className="max-w-4xl mx-auto mb-16 animate-fade-up">
+          <h3 className="text-2xl font-bold text-foreground mb-8 text-center">Naša história</h3>
+          
+          <div className="relative">
+            {/* Timeline line */}
+            <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-primary/20"></div>
             
-            {/* Timeline */}
-            <div className="relative">
-              <h3 className="text-2xl font-bold text-foreground mb-8">Naša história</h3>
-              
-              <div className="relative">
-                {/* Timeline line */}
-                <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-primary/20"></div>
-                
-                {/* Timeline items */}
-                <div className="space-y-8">
-                  {/* Problem */}
-                  <div className="relative flex items-start group">
-                    <div className="absolute left-4 w-4 h-4 bg-primary rounded-full border-4 border-background shadow-lg group-hover:scale-125 transition-transform"></div>
-                    <div className="ml-12 bg-surface/50 backdrop-blur-sm rounded-lg p-4 hover:bg-surface transition-all duration-300">
-                      <div className="flex items-center mb-2">
-                        <span className="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded-full">Problém</span>
-                      </div>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        Frustrácia s neefektívnou správou e-mailov. Strácali sme hodiny hľadaním informácií.
-                      </p>
-                    </div>
+            {/* Timeline items */}
+            <div className="space-y-8">
+              {/* Problem */}
+              <div className="relative flex items-start group">
+                <div className="absolute left-4 w-4 h-4 bg-primary rounded-full border-4 border-background shadow-lg group-hover:scale-125 transition-transform"></div>
+                <div className="ml-12 bg-surface/50 backdrop-blur-sm rounded-lg p-6 hover:bg-surface transition-all duration-300">
+                  <div className="flex items-center mb-3">
+                    <span className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full">Problém</span>
                   </div>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Frustrácia s neefektívnou správou e-mailov. Strácali sme hodiny hľadaním informácií.
+                  </p>
+                </div>
+              </div>
 
-                  {/* Solution */}
-                  <div className="relative flex items-start group">
-                    <div className="absolute left-4 w-4 h-4 bg-primary rounded-full border-4 border-background shadow-lg group-hover:scale-125 transition-transform"></div>
-                    <div className="ml-12 bg-surface/50 backdrop-blur-sm rounded-lg p-4 hover:bg-surface transition-all duration-300">
-                      <div className="flex items-center mb-2">
-                        <span className="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded-full">2023 - Riešenie</span>
-                      </div>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        Vytvorili sme AI riešenie s intuitívnym rozhraním. Mesiace vývoja a testovania.
-                      </p>
-                    </div>
+              {/* Solution */}
+              <div className="relative flex items-start group">
+                <div className="absolute left-4 w-4 h-4 bg-primary rounded-full border-4 border-background shadow-lg group-hover:scale-125 transition-transform"></div>
+                <div className="ml-12 bg-surface/50 backdrop-blur-sm rounded-lg p-6 hover:bg-surface transition-all duration-300">
+                  <div className="flex items-center mb-3">
+                    <span className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full">2023 - Riešenie</span>
                   </div>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Vytvorili sme AI riešenie s intuitívnym rozhraním. Mesiace vývoja a testovania.
+                  </p>
+                </div>
+              </div>
 
-                  {/* Success */}
-                  <div className="relative flex items-start group">
-                    <div className="absolute left-4 w-4 h-4 bg-primary rounded-full border-4 border-background shadow-lg group-hover:scale-125 transition-transform"></div>
-                    <div className="ml-12 bg-surface/50 backdrop-blur-sm rounded-lg p-4 hover:bg-surface transition-all duration-300">
-                      <div className="flex items-center mb-2">
-                        <span className="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded-full">Dnes - Úspech</span>
-                      </div>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        Tisícky používateľov v SK a CZ. Efektívnejšia správa digitálnych informácií.
-                      </p>
-                    </div>
+              {/* Success */}
+              <div className="relative flex items-start group">
+                <div className="absolute left-4 w-4 h-4 bg-primary rounded-full border-4 border-background shadow-lg group-hover:scale-125 transition-transform"></div>
+                <div className="ml-12 bg-surface/50 backdrop-blur-sm rounded-lg p-6 hover:bg-surface transition-all duration-300">
+                  <div className="flex items-center mb-3">
+                    <span className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full">Dnes - Úspech</span>
                   </div>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Tisícky používateľov v SK a CZ. Efektívnejšia správa digitálnych informácií.
+                  </p>
                 </div>
               </div>
             </div>
